@@ -1,2 +1,4 @@
 site_name: Cityhunter
+theme:
+  name: readthedocs
 
