@@ -1,7 +1,6 @@
 # cityhunterxx.github.io
 ### Hi there 👋
 Hey dear, I'm currently learning new competencies.
-
 - 🔭 I’m currently working on the recruitment cybersecurity BU
 - 🌱 I’m currently learning how to become devops
 - 👯 I’m looking to collaborate on the international level
