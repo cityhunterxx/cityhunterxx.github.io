@@ -3,16 +3,19 @@
 ## Git
 ### Les bases
 ### Commandes utiles
-* Récupérer les derniéres mises à jour
+* To recover the latest updates
 
 ```
 git pull
 ```
-* Lister les branches
+* List all of the branches in your repository
 ```
 git branch
 ```
-
+* List which files are staged, unstaged, and untracked.
+```
+git status
+```
 ## Crontabs
 
 
