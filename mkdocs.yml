@@ -1,1 +1,12 @@
 site_name: My website
+repo_url: https://github.com/cityhunterxx/cityhunterxx.github.io
+site_author: Cityhunter
+site_description: "cityhunter Devops blog website"
+copyright: "cityhunter2022"
+#Changing the theme
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
