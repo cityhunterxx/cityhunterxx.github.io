@@ -5,7 +5,8 @@ site_description: "cityhunter Devops blog website"
 copyright: "cityhunter2022"
 #Changing the theme
 theme:
-  name: readthedocs
+  name: flatly
+  nav_style: dark
   highlightjs: true
   hljs_languages:
     - yaml
