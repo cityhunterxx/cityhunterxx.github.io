@@ -5,8 +5,8 @@ site_description: "cityhunter Devops blog website"
 copyright: "cityhunter2022"
 #Changing the theme
 theme:
-  name: cerulean
-  nav_style: dark
+  name: readthedocs
+  
   highlightjs: true
   hljs_languages:
     - yaml
