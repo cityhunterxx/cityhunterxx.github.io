@@ -9,3 +9,5 @@ jobs:
       - name: get repository
         uses: actions/checkout@v3
       - run : ls -al
+      - run : echo 'build image'
+      - run : docker build -t cityhunterxx/website:v0 .
