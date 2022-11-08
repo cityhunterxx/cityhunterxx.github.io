@@ -6,7 +6,6 @@ copyright: "cityhunter2022"
 #Changing the theme
 theme:
   name: readthedocs
-  
   highlightjs: true
   hljs_languages:
     - yaml
