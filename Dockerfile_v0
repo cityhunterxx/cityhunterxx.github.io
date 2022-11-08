@@ -1,0 +1,6 @@
+FROM python:3.9.15
+WORKDIR /app
+COPY . .
+RUN pip install mkdocs
+EXPOSE 8080
+CMD mkdocs serve -a 0.0.0.0:8080
