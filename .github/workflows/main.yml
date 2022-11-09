@@ -1,7 +1,11 @@
 name: Build operations
 on:
   push:
-    branches: [main]
+    branches: 
+      - main
+      - dev
+    tags:
+      - '**'
 jobs:
   Test:
     runs-on: ubuntu-latest
@@ -11,3 +15,4 @@ jobs:
       - run : ls -al
       - run : echo 'build image'
       - run : docker build -t cityhunterxx/website:v0 .
+      - run : printenv 
