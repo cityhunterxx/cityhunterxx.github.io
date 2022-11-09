@@ -27,8 +27,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: .
-          file: ./Dockerfile
           push: true
-          tags: website:${GITHUB_REF_NAME}
-          #tags: ${{ secrets.DOCKER_HUB_USERNAME }}/website:${GITHUB_REF_NAME}
+          #tags: user/app:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/website:${GITHUB_REF_NAME}
