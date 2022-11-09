@@ -7,12 +7,27 @@ on:
     tags:
       - '**'
 jobs:
-  Test:
+  Build-deploy-image:
     runs-on: ubuntu-latest
     steps:
       - name: get repository
         uses: actions/checkout@v3
       - run : ls -al
       - run : echo 'build image'
-      - run : docker build -t cityhunterxx/website:${GITHUB_REF_NAME} .
-      - run : printenv 
+      #- run : docker build -t cityhunterxx/website:${GITHUB_REF_NAME} .
+      #- run : printenv 
+  #Deploy on github
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/website:${GITHUB_REF_NAME}
