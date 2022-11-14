@@ -23,6 +23,7 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       - run : docker push ${{ secrets.DOCKER_HUB_USERNAME }}/website:${GITHUB_REF_NAME}
+                    #website can be replaced with the project name
 
 
 
