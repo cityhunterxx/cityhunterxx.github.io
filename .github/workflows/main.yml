@@ -15,6 +15,7 @@ jobs:
       - run : ls -al
       - run : echo 'build image'
       - run : docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/website:${GITHUB_REF_NAME} .
+      #REF NAME - Name of the branch or tags
       #- run : printenv 
       #  Deploy on github
       - name: Login to Docker Hub
